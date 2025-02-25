@@ -559,21 +559,29 @@ input, textarea {
         order: 2;
     }
     
-    .skl_container {
-        display: grid;
+     .skl_container {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         gap: 15px;
-        padding: 15px 0;
     }
 
     .skill-item {
+        position: relative;
+        width: 100%;
+        height: 0;
         padding-bottom: 100%;
     }
-    
+
     .skill-item img {
-        width: 100px;
-        height: 100px;
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
     
     /* Portfolio Section */
     
