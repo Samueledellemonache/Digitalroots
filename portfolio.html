@@ -1,261 +1,442 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" aria-label="Pagina portfolio Digitalroots">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Samuele Delle Monache">
-    <meta name="description" content="Digitalroots - Samuele Delle Monache, specializzato in digital marketing, advertising e e-commerce.">
-    <title>Portfolio - Samuele Delle Monache</title>
+    <meta name="description" content="Digitalroots - Samuele Delle Monache, specializzato in digital marketing, advertising e e-commerce. Portfolio professionale e servizi">
+    <meta name="keywords" content="digital marketing, e-commerce, advertising, social media, SEO, web marketing">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samueledellemonache.github.io/Digitalroots/">
+    <meta property="og:title" content="Digitalroots - Portfolio Professionale">
+    <meta property="og:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
+    <meta property="og:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://samueledellemonache.github.io/Digitalroots/">
+    <meta name="twitter:title" content="Digitalroots - Portfolio Professionale">
+    <meta name="twitter:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
+    <meta name="twitter:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.png">
+
+    <!-- Preload e Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Fallback per browser senza JavaScript -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap">
+    </noscript>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Favicon e Canonical -->
+    <link rel="canonical" href="https://samueledellemonache.github.io/Digitalroots/portfolio">
     <link rel="icon" href="./assets/media/monogram-digitalroots-favicon.ico" type="image/x-icon">
+    
+    <title>Portfolio - Digitalroots | Samuele Delle Monache</title>
 </head>
 
-<body>
-    <div class="main-container">
+<body aria-label="Contenuto portfolio">
+    <div class="main-container" role="main" aria-label="Contenitore principale">
         
-            <!-- Header -->
-            <header class="sticky-header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo tipografico composto dalla parola digitalroots con sottotitolo advertising e e-commerce">
-                    </a>
-                </div>
-                <div class="navbar-toggler" id="navbar-toggler">
-                    <div class="menu-icon"></div>
-                    <div class="menu-icon"></div>
-                    <div class="menu-icon"></div>
-                </div>
-                <nav class="navbar-collapse" id="navbar-collapse">
-                    <ul>
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="index.html#about" class="nav-link">Su di me</a></li>
-                        <li><a href="index.html#skills" class="nav-link">Le mie Skills</a></li>
-                        <li><a href="portfolio.html" class="nav-link active">Il mio portfolio</a></li>
-                        <li><a href="index.html#footer" class="nav-link">Contatti</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-
-
-            <main>
-                <section id="full-portfolio">
-                    <br>
-                    <br>
-                    <br>
-                    <div class="container">
-                        <h1>Portfolio Completo</h1>
-                        <div class="portfolio-grid">
-
-                            <!-- Project SOCIAL MEDIA -->
-                            <div class="portfolio-item">
-                                <img src="./assets/media/orizon-experience-logo-sustainable-adventure-tourism.png" alt="mappa con percorso tracciato, foglie in basso a sinistra e scritta 'Orizon Experience' in alto" loading="lazy">
-                                <h3>Progetto <br> Social Media</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-social.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                            <!-- Project DISCOVERY-->
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-discovery-project.png" alt="icona stilizzata di una lente d'ingrandimento con delle stelle al suo interno" loading="lazy">
-                                <h3>Progetto <br> Discovery</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-discovery.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                            <!-- Project SHOPIFY-->
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-lookbook-shopify-project-marketplace-secondhand.png" alt="logo tipografico lookbook" loading="lazy">
-                                <h3>Progetto <br> Shopify</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-shopify.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                            <!-- Project FACEBOOK ADS-->
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-facebook-ads-project.png" alt="icona stilizzata di una pagina internet con al suo interno la scritta 'Ads'" loading="lazy">
-                                <h3>Progetto <br> Facebook Ads</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-facebook.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-                            
-                            <!-- Project GOOGLE ADS-->
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-google-ads-project.png" alt="icona stilizzata di una pagina internet con al suo interno la scritta 'Ads" loading="lazy">
-                                <h3>Progetto <br> Google Ads</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-Google Ads-Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                            <!-- Project SEO-->
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-seo-project.png" alt="icona stilizzata di un mirino con al suo interno la scritta 'SEO'" loading="lazy">
-                                <h3>Progetto <br> SEO</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-Seo- Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                             <!-- Project EMAIL MARKETING-->   
-                             <div class="portfolio-item">
-                                <img src="./assets/media/icon-email-marketing-project.png" alt="icona stilizzata di una busta da lettere con delle righe orizzontali sulla sinistra che indicano movimento" loading="lazy">
-                                <h3>Progetto <br> Email Marketing</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Email Marketing-Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                            <!-- Project FUNNEL MARKETING--> 
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-funnel-project.png" alt="icona stilizzata di un imbuto con tre frecce in alto ed una in basso" loading="lazy">
-                                <h3>Progetto <br> Funnel Marketing</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Funnel Marketing-Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-                            
-                            <!-- Project LOOKER STUDIO--> 
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-looker-studio.png" alt="icona stilizzata di un laptop con al suo interno un grafico e in alto a sinistra una lente di ingrendimento" loading="lazy">
-                                <h3>Progetto <br> Looker Studio</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Looker Studio-Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                             <!-- Project GOOGLE TAG MANAGER--> 
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-google-tag-manager.png" alt="logo Google Tag Manager" loading="lazy">
-                                <h3>Progetto <br> Google Tag Manager</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Tag Manager-Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                            <!-- Project GOOGLE SHOPPING--> 
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-google-shopping.png" alt="icona stilizzata di un negozio" loading="lazy">
-                                <h3>Progetto <br> Google Shopping</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Google Shopping-Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                             <!-- Project TIK TOK--> 
-                             <div class="portfolio-item">
-                                    <img src="./assets/media/icon-tiktok-project.png" alt="icona stilizzata di uno smartphone con l'ingrandimento del logo di Tiktok" loading="lazy">
-                                    <h3>Progetto <br> TikTok</h3>
-                                    <div class="project-actions">
-                                        <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/TikTok- Samuele Delle Monache.pdf">Apri PDF</button>
-                                        <a href="index.html" class="back-home">Torna alla Home</a>
-                                    </div>
-                            </div>
-
-                            <!-- Project GOOGLE DISPLAY & DEMAND GEN-->
-                            <div class="portfolio-item">
-                                    <img src="./assets/media/icon-google-display-and-demand-gen.png" alt="grafico stilizzato con andamento crescente e tre persone di fronte" loading="lazy">
-                                    <h3>Progetto <br> Google Display & Demand Gen</h3>
-                                    <div class="project-actions">
-                                        <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Google Display & Demand Gen - Samuele Delle Monache.pdf">Apri PDF</button>
-                                        <a href="index.html" class="back-home">Torna alla Home</a>
-                                    </div>
-                             </div>
-
-
-                            <!-- Project AUTOMATION--> 
-                            <div class="portfolio-item">
-                                    <img src="./assets/media/icon-automation.png" alt="icona stilizzata di un ingranaggio con due frecce che simulano movimento circolare" loading="lazy">
-                                    <h3>Progetto <br> Automazioni</h3>
-                                    <div class="project-actions">
-                                        <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Automation-Samuele Delle Monache.pdf">Apri PDF</button>
-                                        <a href="index.html" class="back-home">Torna alla Home</a>
-                                    </div>
-                            </div>
-
-
-                            <!-- Project GOOGLE ANALYTICS 4--> 
-                            <div class="portfolio-item">
-                                <img src="./assets/media/icon-google-analytics4.png" alt="icona stilizzata di un laptop con al suo interno un grafico e in alto a destra una lente di ingrendimento" loading="lazy">
-                                <h3>Progetto <br> Google Analytics 4</h3>
-                                <div class="project-actions">
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/Google Analytics 4 - Samuele Delle Monache.pdf">Apri PDF</button>
-                                    <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/EXCEL - Google Analytics 4- Samuele Delle Monache.xlsx">Download Excel</button>
-                                    <a href="index.html" class="back-home">Torna alla Home</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <!-- FOOTER -->
-    <footer id="footer" class="footer">
-        <div class="footer-container">
-             <!-- Form Column -->
-        <div class="footer-form">
-            <p class="form-title">Mettiti in contatto con me!</p>
-            <form action="https://formspree.io/f/xnnjlaly" method="POST" id="contact-form">
-                    Nome:<input type="text" placeholder="Nome" id="name" name="name" required>
-                    Email:<input type="email" placeholder="E-mail" id="email" name="email" required>
-                    Messaggio:<textarea placeholder="Messaggio" id="message" name="message" required></textarea>
-                <button class="submit" type="submit">Contattami</button>
-            </form>
-        </div>
-
-        <!-- Info Column -->
-        <div class="footer-info">
-            <div class="footer-branding">
-                <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo tipografico composto dalla parola digitalroots con sottotitolo advertising e e-commerce" class="footer-logo">
-                <ul class="footer-contacts">
-                    <li>E-mail: samuele.digitalroots@gmail.com</li>
-                    <li>Numero: +393923574954</li>
-                    <li>Dove siamo: Via delle piaggarelle, 26 Viterbo VT 01100</li>
-                </ul>
+        <!-- Header -->
+        <header class="sticky-header" role="banner"aria-label="Intestazione principale">
+            <div class="logo" aria-label="Logo di Digitalroots">
+                <a href="index.html">
+                    <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo Digitalroots" aria-hidden="true">
+                </a>
             </div>
-            <ul class="footer-social">
-                <li class="social-item">
-                    <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/?_rdr" target="_blank">
-                        <img src="./assets/media/fbicon.png" alt="icona Facebook">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="https://www.instagram.com/samuele_dellemonache/" target="_blank">
-                        <img src="./assets/media/igicon.png" alt="icona Instagram">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </footer>
-    <div id="successModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Grazie per avermi contattato! Riceverai una risposta entro 24 ore</p>
-    </div>
-</div>
+            <div class="navbar-toggler" id="navbar-toggler" role="button"
+            aria-expanded="false" 
+            aria-controls="navbar-collapse"
+            aria-label="Menu di navigazione">
+                <div class="menu-icon" aria-hidden="true"></div>
+                <div class="menu-icon" aria-hidden="true"></div>
+                <div class="menu-icon" aria-hidden="true"></div>
+            </div>
+            <nav class="navbar-collapse" id="navbar-collapse" role="navigation" aria-label="Menu principale"
+            aria-hidden="true">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html#intro" class="nav-link"  role="menuitem">Home</a></li>
+                    <li role="none"><a href="index.html#about" class="nav-link"  role="menuitem">Su di me</a></li>
+                    <li role="none"><a href="index.html#skills" class="nav-link"  role="menuitem">Skills</a></li>
+                    <li role="none"><a href="portfolio.html" class="nav-link"  role="menuitem">Portfolio</a></li>
+                    <li role="none"><a href="portfolio.html#footer" class="nav-link"  role="menuitem">Contatti</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- JavaScript -->
-    <script src="./assets/script.js"></script>
+        <main role="main" aria-label="Contenuto principale portfolio">
+            <section id="full-portfolio" role="region" 
+            aria-labelledby="portfolioMainTitle"
+            aria-describedby="portfolioMainDesc">
+                <br>
+                <br>
+                <br>
+                <div class="container">
+                    <h1 id="portfolioMainTitle">Portfolio Completo</h1>
+                    <h2 id="portfolioMainDesc">Esplora i progetti di digital marketing e advertising che ho realizzato per clienti diversi.</h2>
+                    <br>
+                    <br>
+                     <div class="portfolio-grid" role="grid" aria-label="Elenco progetti">
+            <!-- Project SOCIAL MEDIA -->
+            <div class="portfolio-item" role="row" aria-labelledby="project1-title" aria-describedby="project1-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/orizon-experience-logo-sustainable-adventure-tourism.png" 
+                        alt="mappa con percorso tracciato, foglie in basso a sinistra e scritta 'Orizon Experience' in alto" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project1-title">Progetto <br> Social Media</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Social Media">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Social Media (2MB)"
+                                data-pdf="./assets/media/project-social.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" 
+                        class="back-home" 
+                        aria-label="Torna alla home page">
+                            Torna alla Home
+                        </a>
+                    </div>
+                    <p id="project1-desc" hidden>Strategia social media per Orizon Experience</p>
+                </div>
+            </div>
+        
+            <!-- Project DISCOVERY -->
+            <div class="portfolio-item" role="row" aria-labelledby="project2-title" aria-describedby="project2-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-discovery-project.png" 
+                    alt="icona stilizzata di una lente d'ingrandimento con delle stelle al suo interno" loading="lazy" aria-hidden="true">
+                    <h3 id="project2-title">Progetto <br> Discovery</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Discovery">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Discovery (1.8MB)"
+                                data-pdf="./assets/media/project-discovery.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project2-desc" hidden>Analisi di mercato e competitor per startup tech</p>
+                </div>
+            </div>
+        
+            <!-- Project SHOPIFY -->
+            <div class="portfolio-item" role="row" aria-labelledby="project3-title" aria-describedby="project3-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-lookbook-shopify-project-marketplace-secondhand.png" 
+                    alt="logo tipografico lookbook" loading="lazy" aria-hidden="true">
+                    <h3 id="project3-title">Progetto <br> Shopify</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Shopify">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Shopify (2.3MB)"
+                                data-pdf="./assets/media/project-shopify.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project3-desc" hidden>Implementazione e-commerce su piattaforma Shopify</p>
+                </div>
+            </div>
+        
+            <!-- Project FACEBOOK ADS -->
+            <div class="portfolio-item" role="row" aria-labelledby="project4-title" aria-describedby="project4-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-facebook-ads-project.png" 
+                        alt="icona stilizzata di una pagina internet con al suo interno la scritta 'Ads'" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project4-title">Progetto <br> Facebook Ads</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Facebook Ads">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Facebook Ads (1.5MB)"
+                                data-pdf="./assets/media/project-facebook.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project4-desc" hidden>Campagna adv per lancio prodotto beauty</p>
+                </div>
+            </div>
+        
+            <!-- Project GOOGLE ADS -->
+            <div class="portfolio-item" role="row" aria-labelledby="project5-title" aria-describedby="project5-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-google-ads-project.png" 
+                        alt="icona stilizzata di una pagina internet con al suo interno la scritta 'Ads" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project5-title">Progetto <br> Google Ads</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Google Ads">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Google Ads (2.1MB)"
+                                data-pdf="./assets/media/project-Google Ads-Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project5-desc" hidden>Campagna Search per servizi professionali</p>
+                </div>
+            </div>
+        
+            <!-- Project SEO -->
+            <div class="portfolio-item" role="row" aria-labelledby="project6-title" aria-describedby="project6-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-seo-project.png" 
+                        alt="icona stilizzata di un mirino con al suo interno la scritta 'SEO'" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project6-title">Progetto <br> SEO</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto SEO">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto SEO (1.9MB)"
+                                data-pdf="./assets/media/project-Seo- Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project6-desc" hidden>Ottimizzazione SEO per sito turistico</p>
+                </div>
+            </div>
+        
+            <!-- Project EMAIL MARKETING -->
+            <div class="portfolio-item" role="row" aria-labelledby="project7-title" aria-describedby="project7-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-email-marketing-project.png" 
+                        alt="icona stilizzata di una busta da lettere con delle righe orizzontali sulla sinistra che indicano movimento" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project7-title">Progetto <br> Email Marketing</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Email Marketing">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Email Marketing (1.2MB)"
+                                data-pdf="./assets/media/Email Marketing-Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project7-desc" hidden>Campagna lead nurturing per software SaaS</p>
+                </div>
+            </div>
+        
+            <!-- Project FUNNEL MARKETING -->
+            <div class="portfolio-item" role="row" aria-labelledby="project8-title" aria-describedby="project8-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-funnel-project.png" 
+                        alt="icona stilizzata di un imbuto con tre frecce in alto ed una in basso" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project8-title">Progetto <br> Funnel Marketing</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Funnel Marketing">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Funnel Marketing (1.7MB)"
+                                data-pdf="./assets/media/Funnel Marketing-Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project8-desc" hidden>Sales funnel per servizi finanziari</p>
+                </div>
+            </div>
+        
+            <!-- Project LOOKER STUDIO -->
+            <div class="portfolio-item" role="row" aria-labelledby="project9-title" aria-describedby="project9-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-looker-studio.png" 
+                        alt="icona stilizzata di un laptop con al suo interno un grafico e in alto a sinistra una lente di ingrendimento" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project9-title">Progetto <br> Looker Studio</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Looker Studio">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Looker Studio (2.4MB)"
+                                data-pdf="./assets/media/Looker Studio-Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project9-desc" hidden>Dashboard analitiche per e-commerce</p>
+                </div>
+            </div>
+        
+            <!-- Project GOOGLE TAG MANAGER -->
+            <div class="portfolio-item" role="row" aria-labelledby="project10-title" aria-describedby="project10-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-google-tag-manager.png" 
+                        alt="logo Google Tag Manager" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project10-title">Progetto <br> Google Tag Manager</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Google Tag Manager">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Google Tag Manager (1.1MB)"
+                                data-pdf="./assets/media/Tag Manager-Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project10-desc" hidden>Implementazione tag per tracciamento avanzato</p>
+                </div>
+            </div>
+        
+            <!-- Project GOOGLE SHOPPING -->
+            <div class="portfolio-item" role="row" aria-labelledby="project11-title" aria-describedby="project11-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-google-shopping.png" alt="icona stilizzata di un negozio" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project11-title">Progetto <br> Google Shopping</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Google Shopping">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Google Shopping (1.6MB)"
+                                data-pdf="./assets/media/Google Shopping-Samuele Delle Monache.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project11-desc" hidden>Gestione feed prodotti per fashion e-commerce</p>
+                </div>
+            </div>
+        
+            <!-- Project TIK TOK -->
+            <div class="portfolio-item" role="row" aria-labelledby="project12-title" aria-describedby="project12-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-tiktok-project.png" 
+                        alt="icona stilizzata di uno smartphone con l'ingrandimento del logo di Tiktok" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project12-title">Progetto <br> TikTok</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto TikTok">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto TikTok (1.4MB)"
+                                data-pdf="./assets/media/project-tiktok.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project12-desc" hidden>Strategia di marketing su TikTok per brand di moda</p>
+                </div>
+            </div>
+        
+            <!-- Project GOOGLE DISPLAY & DEMAND GEN -->
+            <div class="portfolio-item" role="row" aria-labelledby="project13-title" aria-describedby="project13-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-google-display-and-demand-gen.png" alt="grafico stilizzato con andamento crescente e tre persone di fronte" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project13-title">Progetto <br> Google Display & Demand Gen</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Google Display & Demand Gen">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Google Display & Demand Gen (1.3MB)"
+                                data-pdf="./assets/media/project-google-display.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project13-desc" hidden>Campagna display per aumento visibilità brand</p>
+                </div>
+            </div>
+        
+            <!-- Project AUTOMATION -->
+            <div class="portfolio-item" role="row" aria-labelledby="project14-title" aria-describedby="project14-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-automation.png" alt="icona stilizzata di un ingranaggio con due frecce che simulano movimento circolare" loading="lazy" 
+                        aria-hidden="true">
+                    <h3 id="project14-title">Progetto <br> Automation</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Automation">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Automation (1.0MB)"
+                                data-pdf="./assets/media/project-automation.pdf">
+                            Apri PDF
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project14-desc" hidden>Automazione dei processi di marketing</p>
+                </div>
+            </div>
+        
+            <!-- Project GOOGLE ANALYTICS 4 -->
+            <div class="portfolio-item" role="row" aria-labelledby="project15-title" aria-describedby="project15-desc">
+                <div role="gridcell">
+                    <img src="./assets/media/icon-google-analytics4.png" alt="icona stilizzata di un laptop con al suo interno un grafico e in alto a destra una lente di ingrendimento" loading="lazy"
+                        aria-hidden="true">
+                    <h3 id="project15-title">Progetto <br> Google Analytics 4</h3>
+                    <div class="project-actions" role="group" aria-label="Azioni progetto Google Analytics 4">
+                        <button class="btn open-pdf" 
+                                aria-label="Apri PDF progetto Google Analytics 4 (1.8MB)"
+                                data-pdf="./assets/media/project-google-analytics4.pdf">
+                            Apri PDF
+                        </button>
+                        <button class="btn download-excel" 
+                                aria-label="Scarica Excel progetto Google Analytics 4"
+                                data-excel="./assets/media/project-google-analytics4-excel.xlsx">
+                            Scarica Excel
+                        </button>
+                        <a href="index.html" class="back-home" aria-label="Torna alla home page">Torna alla Home</a>
+                    </div>
+                    <p id="project15-desc" hidden>Implementazione e reportistica su Google Analytics 4</p>
+                </div>
+            </div>
+        </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer id="footer" class="footer">
+            <div class="footer-container">
+                <!-- Form Column -->
+                <div class="footer-form">
+                    <p class="form-title">Mettiti in contatto con me!</p>
+                    <form action="https://formspree.io/f/xnnjlaly" method="POST" id="contact-form" aria-labelledby="contact-form-title">
+                        <label for="name">Nome:</label>
+                        <input type="text" placeholder="Nome" id="name" name="name" required aria-required="true" autocomplete="name">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="E-mail" id="email" name="email" required aria-required="true" autocomplete="email">
+                        
+                        <label for="message">Messaggio:</label>
+                        <textarea placeholder="Messaggio" id="message" name="message" required aria-required="true" autocomplete="message"></textarea>
+                        
+                        <button class="submit" type="submit" aria-label="Invia messaggio">Contattami</button>
+                    </form>
+                </div>
+
+                <!-- Info Column -->
+                <div class="footer-info">
+                    <div class="footer-branding">
+                        <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo tipografico composto dalla parola digitalroots con sottotitolo advertising e e-commerce" class="footer-logo">
+                        <ul class="footer-contacts">
+                            <li>E-mail: <a href="mailto:samuele.digitalroots@gmail.com" title="Invia email">samuele.digitalroots@gmail.com</a></li>
+                        <li>Numero: +393923574954</li>
+                        <li>Dove siamo:  <a href="https://www.google.com/maps/search/?api=1&query=Via+delle+piaggarelle,+26+Viterbo+VT+01100" 
+                            target="_blank" 
+                            rel="noopener" 
+                            title="Visualizza su Google Maps">
+                            Via delle piaggarelle, 26 Viterbo VT 01100
+                          </a></li>
+                        </ul>
+                    </div>
+                    <ul class="footer-social">
+                        <li class="social-item">
+                            <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/?_rdr" target="_blank">
+                                <img src="./assets/media/fbicon.png" alt="icona Facebook">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://www.instagram.com/samuele_dellemonache/" target="_blank">
+                                <img src="./assets/media/igicon.png" alt="icona Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div id="successModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Grazie per avermi contattato! Riceverai una risposta entro 24 ore</p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./assets/script.js"></script>
+    </div>
 </body>
 </html>
