@@ -328,7 +328,6 @@ section {
 
 .discover-more,
 .open-pdf,
-.download-excel,
 .back-home,
 .submit {
     background-color: var(--primary-color);
@@ -345,7 +344,6 @@ section {
 
 .discover-more:hover,
 .open-pdf:hover,
-.download-excel:hover,
 .back-home:hover,
 .submit:hover {
     background-color: var(--button-hover-color);
