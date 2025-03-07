@@ -1,60 +1,90 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" aria-label="Sito principale Digitalroots">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Samuele Delle Monache">
-    <meta name="description" content="Digitalroots - Samuele Delle Monache, specializzato in digital marketing, advertising e e-commerce.">
-    <title>Digitalroots - Samuele Delle Monache</title>
+    <meta name="description" content="Digitalroots - Samuele Delle Monache, specializzato in digital marketing, advertising e e-commerce. Portfolio professionale e servizi">
+    <meta name="keywords" content="digital marketing, e-commerce, advertising, social media, SEO, web marketing">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samueledellemonache.github.io/Digitalroots/">
+    <meta property="og:title" content="Digitalroots - Portfolio Professionale">
+    <meta property="og:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
+    <meta property="og:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://samueledellemonache.github.io/Digitalroots/">
+    <meta name="twitter:title" content="Digitalroots - Portfolio Professionale">
+    <meta name="twitter:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
+    <meta name="twitter:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.png">
+
+    <!-- Preload & Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Fallback for browser without JavaScript -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap">
+    </noscript>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Favicon e Canonical -->
+    <link rel="canonical" href="https://samueledellemonache.github.io/Digitalroots/">
     <link rel="icon" href="./assets/media/monogram-digitalroots-favicon.ico" type="image/x-icon">
+    
+    <title>Digitalroots - Samuele Delle Monache</title>
 </head>
 
-<body>
-    <div class="main-container">
-        <!-- Header -->
-        <header class="sticky-header">
-            <div class="logo">
+<body aria-label="Contenuto principale">
+    <div class="main-container" role="main" aria-label="Contenitore principale">
+        <header class="sticky-header" role="banner"aria-label="Intestazione principale">
+            <div class="logo" aria-label="Logo di Digitalroots">
                 <a href="index.html">
-                    <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo tipografico composto dalla parola digitalroots con sottotitolo advertising e e-commerce">
+                    <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo Digitalroots" aria-hidden="true">
                 </a>
             </div>
-            <div class="navbar-toggler" id="navbar-toggler">
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
+            <div class="navbar-toggler" id="navbar-toggler" role="button" aria-expanded="false" aria-label="Menu di navigazione">
+                <div class="menu-icon" aria-hidden="true"></div>
+                <div class="menu-icon" aria-hidden="true"></div>
+                <div class="menu-icon" aria-hidden="true"></div>
             </div>
-            <nav class="navbar-collapse" id="navbar-collapse">
-                <ul>
-                    <li><a href="index.html#intro" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">Su di me</a></li>
-                    <li><a href="index.html#skills" class="nav-link">Le mie Skills</a></li>
-                    <li><a href="portfolio.html" class="nav-link active">Il mio portfolio</a></li>
-                    <li><a href="index.html#footer" class="nav-link">Contatti</a></li>
+            <nav class="navbar-collapse" id="navbar-collapse" role="navigation" aria-label="Menu principale" aria-hidden="true">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html#intro" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="index.html#about" class="nav-link" role="menuitem">Su di me</a></li>
+                    <li role="none"><a href="index.html#skills" class="nav-link" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="portfolio.html" class="nav-link" role="menuitem">Portfolio</a></li>
+                    <li role="none"><a href="index.html#footer" class="nav-link" role="menuitem">Contatti</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- INTRO SECTION -->
-        <section id="intro">
+        <section id="intro" role="region" aria-labelledby="introTitle" aria-describedby="introDesc">
 
-            <div class="intro-section"> 
-                <div class="intro text">
-            <h1><b>Benvenutə su Digitalroots </b></h1>
-            <h2><b>Creatività digitale per un futuro sostenibile.<br>
+            <div class="intro-section" role="document"> 
+                <div class="intro text" aria-labelledby="intro-headings">
+            <h1 id="introTitle" aria-label="Titolo principale"><b>Benvenutə su Digitalroots </b></h1>
+            <h2 id="introDesc" aria-label="Sottotitolo introduttivo"><b>Creatività digitale per un futuro sostenibile.<br>
                 Esplora, scopri, collabora.</b></h2>
             </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" role="region" aria-labelledby="about-title" aria-describedby="aboutDesc">
             <div class="container">
                 <div class="section-header">
                     <h2 id="about-title">Su di me</h2>
+                    <br>
                 </div>
                 
                 <div class="about_container">
@@ -96,15 +126,17 @@
 
 
         <!-- SKILLS SECTION -->
-        <section id="skills">
+        <section id="skills" role="region" aria-labelledby="skillsTitle" aria-describedby="skillsDesc">
             <div class="container">
                 <h2>Le mie skills</h2>
+                <br>
                 <div class="skl_container">
                     <div class="skill-item" data-tooltip="CREATIVITÀ: Ideazione e realizzazione di contenuti">
                         <img src="./assets/media/icon-creativity-skills.png" alt="Profilo stilizzato di una testa umana con elementi astratti che simboleggiano la creatività. Sopra, la scritta 'CREATIVITY'" loading="lazy"> 
                     </div>
-                    <div class="skill-item" data-tooltip="SOCIAL MEDIA MANAGER: Gestione e pianificazione dei contenuti sui social">
-                        <img src="./assets/media/icon-social-media-manager-skills.png" alt="Icona stilizzata di una mano che sorregge tre simboli social: un cuore, un play e un like. Sopra, la scritta 'SMM'" loading="lazy">
+                    <div class="skill-item" data-tooltip="SOCIAL MEDIA MANAGER: Gestione e pianificazione dei contenuti sui social" aria-describedby="creativity-tooltip"
+                    role="img">
+                        <img src="./assets/media/icon-social-media-manager-skills.png" alt="Icona stilizzata di una mano che sorregge tre simboli social: un cuore, un play e un like. Sopra, la scritta 'SMM'" aria-hidden="true" loading="lazy">
                     </div>
                     <div class="skill-item" data-tooltip="ADVERTISING: Creazione e gestione di campagne pubblicitarie">
                         <img src="./assets/media/icon-advertising-skills.png" alt="Icona stilizzata di un megafono con simboli di advertising: play, ads e condivisione. Sopra, la scritta 'ADV'" loading="lazy">
@@ -142,23 +174,24 @@
         </section>
 
         <!-- PORTFOLIO SECTION -->
-        <section id="portfolio">
-            <div class="container">
+        <section id="portfolio"  role="region" aria-labelledby="portfolio-title" aria-describedby="portfolioDesc">
+            <div class="container" role="grid" aria-label="Griglia progetti">
                 <div class="portfolio-header">
                     <h2>Il mio portfolio</h2>
+                    <br>
                 </div>
                 <div class="prt_container">
-                    <div class="project">
+                    <div class="project" role="article">
                         <img src="./assets/media/orizon-experience-logo-sustainable-adventure-tourism.png" alt="mappa con percorso tracciato, foglie in basso a sinistra e scritta 'Orizon Experience' in alto" loading="lazy">
                         <h3>Social Media</h3>
                         <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-social.pdf">Apri PDF</button>
                     </div>
-                    <div class="project">
+                    <div class="project" role="article">
                         <img src="./assets/media/icon-facebook-ads-project.png" alt="icona stilizzata di una pagina internet con al suo interno la scritta 'Ads'" loading="lazy">
                         <h3>Facebook Ads</h3>
                         <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-facebook.pdf">Apri PDF</button>
                     </div>
-                    <div class="project">
+                    <div class="project" role="article">
                         <img src="./assets/media/icon-lookbook-shopify-project-marketplace-secondhand.png" alt="logo tipografico lookbook" loading="lazy">
                         <h3>Shopify</h3>
                         <button class="btn open-pdf"  target="_blank" data-pdf="./assets/media/project-shopify.pdf">Apri PDF</button>
@@ -170,27 +203,40 @@
     </div>
 
        <!-- FOOTER -->
-       <footer id="footer" class="footer">
+       <footer id="footer" class="footer" role="contentinfo"
+       aria-labelledby="footerTitle"
+       aria-describedby="footerDesc">
         <div class="footer-container">
             <!-- Form Column -->
-            <div class="footer-form">
+            <div class="footer-form" role="form" aria-labelledby="formTitle">
                 <p class="form-title">Mettiti in contatto con me!</p>
-                <form action="https://formspree.io/f/xnnjlaly" method="POST" id="contact-form">
-                    Nome:<input type="text" placeholder="Nome" id="name" name="name" required>
-                    Email:<input type="email" placeholder="E-mail" id="email" name="email" required>
-                    Messaggio:<textarea placeholder="Messaggio" id="message" name="message" required></textarea>
-                    <button class="submit" type="submit">Contattami</button>
+                <form action="https://formspree.io/f/xnnjlaly" method="POST" id="contact-form" aria-labelledby="contact-form-title">
+                    <label for="name">Nome:</label>
+                    <input type="text" placeholder="Nome" id="name" name="name" required aria-required="true" autocomplete="name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="E-mail" id="email" name="email" required aria-required="true" autocomplete="email">
+                    
+                    <label for="message">Messaggio:</label>
+                    <textarea placeholder="Messaggio" id="message" name="message" required aria-required="true" autocomplete="message"></textarea>
+                    
+                    <button class="submit" type="submit" aria-label="Invia messaggio">Contattami</button>
                 </form>
             </div>
 
             <!-- Info Column -->
-            <div class="footer-info">
+            <div class="footer-info" role="complementary" aria-label="Informazioni di contatto">
                 <div class="footer-branding">
                     <img src="./assets/media/logo-digitalroots-scritta.png" alt="Logo tipografico composto dalla parola digitalroots con sottotitolo advertising e e-commerce" class="footer-logo" loading="lazy">
                     <ul class="footer-contacts">
-                        <li>E-mail: samuele.digitalroots@gmail.com</li>
+                        <li>E-mail: <a href="mailto:samuele.digitalroots@gmail.com" title="Invia email">samuele.digitalroots@gmail.com</a></li>
                         <li>Numero: +393923574954</li>
-                        <li>Dove siamo: Via delle piaggarelle, 26 Viterbo VT 01100</li>
+                        <li>Dove siamo:  <a href="https://www.google.com/maps/search/?api=1&query=Via+delle+piaggarelle,+26+Viterbo+VT+01100" 
+                            target="_blank" 
+                            rel="noopener" 
+                            title="Visualizza su Google Maps">
+                            Via delle piaggarelle, 26 Viterbo VT 01100
+                          </a></li>
                     </ul>
                 </div>
                 <ul class="footer-social">
