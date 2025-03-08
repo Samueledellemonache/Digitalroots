@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         handlePDFLinks();
         checkAnchorPosition();
         initAriaRoles();
-        initTooltips(); 
+        initTooltips(); // Modified tooltip initialization
     }
 
     // Initialize ARIA roles
@@ -203,50 +203,92 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Tooltip
+    // Enhanced Tooltip functionality
     function initTooltips() {
         const skillItems = document.querySelectorAll('.skill-item');
-        
-        skillItems.forEach(item => {
+        let activeTooltip = null;
+        let hoverTimeout;
+
+        skillItems.forEach((item, index) => {
             const tooltipText = item.dataset.tooltip;
             if(!tooltipText) return;
 
+            const tooltipId = `tooltip-${index}`;
             const tooltip = document.createElement('div');
             tooltip.className = 'tooltip';
+            tooltip.id = tooltipId;
             tooltip.textContent = tooltipText;
+            tooltip.setAttribute('role', 'tooltip');
+            tooltip.setAttribute('aria-hidden', 'true');
             item.appendChild(tooltip);
 
-            const updateTooltip = () => {
+            // Accessibility attributes
+            item.setAttribute('aria-describedby', tooltipId);
+            item.setAttribute('tabindex', '0');
+
+            const showTooltip = () => {
+                if(activeTooltip && activeTooltip !== tooltip) {
+                    activeTooltip.setAttribute('aria-hidden', 'true');
+                }
+                tooltip.setAttribute('aria-hidden', 'false');
+                tooltip.style.opacity = '1';
+                tooltip.style.visibility = 'visible';
+                activeTooltip = tooltip;
+            };
+
+            const hideTooltip = () => {
+                tooltip.setAttribute('aria-hidden', 'true');
+                tooltip.style.opacity = '0';
+                tooltip.style.visibility = 'hidden';
+                if(activeTooltip === tooltip) activeTooltip = null;
+            };
+
+            // Desktop interactions
+            item.addEventListener('mouseenter', () => {
+                hoverTimeout = setTimeout(showTooltip, 300);
+            });
+
+            item.addEventListener('mouseleave', () => {
+                clearTimeout(hoverTimeout);
+                hideTooltip();
+            });
+
+            // Mobile interactions
+            item.addEventListener('click', (e) => {
+                if(window.innerWidth < 768) {
+                    e.preventDefault();
+                    tooltip.getAttribute('aria-hidden') === 'true' 
+                        ? showTooltip() 
+                        : hideTooltip();
+                }
+            });
+
+            // Keyboard navigation
+            item.addEventListener('focus', showTooltip);
+            item.addEventListener('blur', hideTooltip);
+
+            // Update tooltip size
+            const updateTooltipSize = () => {
                 tooltip.style.width = `${item.offsetWidth}px`;
                 tooltip.style.height = `${item.offsetHeight}px`;
             };
 
-            item.addEventListener('mouseenter', () => {
-                tooltip.style.opacity = '1';
-                tooltip.style.visibility = 'visible';
-            });
+            window.addEventListener('resize', updateTooltipSize);
+            updateTooltipSize();
+        });
 
-            item.addEventListener('mouseleave', () => {
-                tooltip.style.opacity = '0';
-                tooltip.style.visibility = 'hidden';
-            });
-
-            // Touch event management
-            item.addEventListener('touchstart', (e) => {
-                e.preventDefault();
-                tooltip.style.opacity = '1';
-                tooltip.style.visibility = 'visible';
-            });
-
-            document.addEventListener('touchstart', (e) => {
-                if(!item.contains(e.target)) {
-                    tooltip.style.opacity = '0';
-                    tooltip.style.visibility = 'hidden';
-                }
-            });
-
-            window.addEventListener('resize', updateTooltip);
-            updateTooltip();
+        // Close tooltips when clicking outside
+        document.addEventListener('click', (e) => {
+            if(!e.target.closest('.skill-item')) {
+                skillItems.forEach(item => {
+                    const tooltip = item.querySelector('.tooltip');
+                    if(tooltip) {
+                        tooltip.setAttribute('aria-hidden', 'true');
+                        tooltip.style.opacity = '0';
+                        tooltip.style.visibility = 'hidden';
+                    }
+                });
+            }
         });
     }
 
