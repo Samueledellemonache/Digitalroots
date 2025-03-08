@@ -214,14 +214,13 @@ section {
 .tooltip:hover {
     background: rgba(44, 89, 81, 1);
 }
-
 /* Portfolio Sections */
 .prt_container,
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    width: 100%;
+    midth: 100%;
     margin: 0 auto;
 }
 
@@ -279,6 +278,7 @@ section {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
+
 /*  PORTFOLIO PAGE  */
 .portfolio-grid {
     display: grid;
@@ -333,7 +333,7 @@ section {
     background-color: var(--primary-color);
     color: white;
     padding: var(--button-padding);
-    border-radius: var(--button-radius );
+    border-radius: var(--button-radius);
     font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s;
@@ -450,7 +450,6 @@ input, textarea {
 
     color: var(--text-color);
 }
-
 /* ========= RESPONSIVE ========= */
 @media (max-width: 991px) {
     /* Navigation */
@@ -513,6 +512,25 @@ input, textarea {
     .footer-container { flex-direction: column; }
 
     .footer-contacts a {
-        word-break: break-all;
-    }
+        word-break: break-all;}
+}
+
+/* Mobile Hover Fix */
+@media (hover: none) {
+    .skill-item:hover,
+    .project:hover { transform: none; }
+}
+
+
+/* ========= UTILITY CLASSES ========= */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
