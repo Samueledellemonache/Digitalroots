@@ -45,7 +45,7 @@
 </head>
 
 <body aria-label="Contenuto portfolio">
-    <div class="main-container" role="main" aria-label="Contenitore principale">
+    <div class="main-container">
         
         <!-- Header -->
         <header class="sticky-header" role="banner"aria-label="Intestazione principale">
@@ -65,7 +65,7 @@
             <nav class="navbar-collapse" id="navbar-collapse" role="navigation" aria-label="Menu principale"
             aria-hidden="true">
                 <ul role="menu">
-                    <li role="none"><a href="index.html#intro" class="nav-link" role="menuitemradio" tabindex="0" aria-current="page">Home</a></li>
+                    <li role="none"><a href="index.html#intro" class="nav-link" role="menuitemradio" aria-checked="true" aria-current="page">Home</a></li>
                     <li role="none"><a href="index.html#about" class="nav-link"  role="menuitem">Su di me</a></li>
                     <li role="none"><a href="index.html#skills" class="nav-link"  role="menuitem">Skills</a></li>
                     <li role="none"><a href="portfolio.html" class="nav-link"  role="menuitem">Portfolio</a></li>
@@ -376,7 +376,7 @@
         </main>
 
         <!-- FOOTER -->
-        <footer id="footer" class="footer">
+        <footer id="footer" class="footer" role="contentinfo" aria-labelledby="footerTitle">
             <div class="footer-container">
                 <!-- Form Column -->
                 <div class="footer-form">
