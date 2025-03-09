@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         setupModal();
     }
 
-    // NAVIGATION SYSTEM
+    // NAVIGATION SYSTEM (Corrected)
     function initNavigation() {
         let isMenuOpen = false;
 
