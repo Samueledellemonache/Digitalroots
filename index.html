@@ -45,21 +45,23 @@
 </head>
 
 <body aria-label="Contenuto principale">
-    <div class="main-container" role="main" aria-label="Contenitore principale">
-        <header class="sticky-header" role="banner"aria-label="Intestazione principale">
+    <div class="main-container">
+
+        <header class="sticky-header" role="banner" aria-label="Intestazione principale">
             <div class="logo" aria-label="Logo di Digitalroots">
                 <a href="index.html">
                     <img src="./assets/media/logo-digitalroots-scritta.webp" alt="Digitalroots - Torna alla home page">
                 </a>
             </div>
+
             <div class="navbar-toggler" id="navbar-toggler" role="button" aria-expanded="false" aria-label="Menu di navigazione">
                 <div class="menu-icon" aria-hidden="true"></div>
                 <div class="menu-icon" aria-hidden="true"></div>
                 <div class="menu-icon" aria-hidden="true"></div>
             </div>
-            <nav class="navbar-collapse" id="navbar-collapse" role="navigation" aria-label="Menu principale">
+            <nav class="navbar-collapse" id="navbar-collapse" role="navigation" aria-label="Menu principale" aria-hidden="true">
                 <ul role="menu">
-                    <li role="none"><a href="index.html#intro" class="nav-link" role="menuitemradio" tabindex="0" aria-current="page">Home</a></li>
+                    <li role="none"><a href="index.html#intro" class="nav-link" role="menuitemradio" aria-current="page" aria-checked="true" aroa-current="page">Home</a></li>
                     <li role="none"><a href="index.html#about" class="nav-link" role="menuitem">Su di me</a></li>
                     <li role="none"><a href="index.html#skills" class="nav-link" role="menuitem">Skills</a></li>
                     <li role="none"><a href="portfolio.html" class="nav-link" role="menuitem">Portfolio</a></li>
@@ -205,8 +207,8 @@
 
        <!-- FOOTER -->
        <footer id="footer" class="footer" role="contentinfo"
-       aria-labelledby="footerTitle"
-       aria-describedby="footerDesc">
+       aria-labelledby="footerTitle">
+
         <div class="footer-container">
             <!-- Form Column -->
             <div class="footer-form" role="form" aria-labelledby="formTitle">
