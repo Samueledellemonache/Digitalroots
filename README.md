@@ -66,12 +66,12 @@ git clone https://github.com/samueledellemonache/Digitalroots.git
 
 DIGITALROOTS/
 ├── assets/
-│   ├── media/    # Immagini ottimizzate
+│   ├── media/           # Immagini ottimizzate
 |       └── screenshots/ # Solo per file README.md
-│   ├── scripts/  # Funzionalità base
-│   └── styles/   # CSS organizzato
-├── index.html    # Homepage principale
-├── portfolio/    # Dettagli progetti
+│   ├── script.js/       # Funzionalità base
+│   └── style.css/       # CSS organizzato
+├── index.html           # Homepage principale
+├── portfolio.html/      # Dettagli progetti
 └── README.md
 
 ---
