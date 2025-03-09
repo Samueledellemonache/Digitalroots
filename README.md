@@ -7,8 +7,8 @@
 ## 🖼 Anteprima del sito
 
 ### Homepage
-![Anteprima homepage](./assets/media/screenshots/homepage.webp)
-![Anteprima Su di me](./assets/media/screenshots/about-section.webp)
+![Anteprima homepage](./assets/media/screenshot/homepage.webp)
+![Anteprima Su di me](./assets/media/screenshot/about-section.webp)
 
 ### Pagina Portfolio
 ![Anteprima portfolio](./assets/media/screenshots/portfolio.webp)
