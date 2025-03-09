@@ -122,12 +122,7 @@ DIGITALROOTS/
     </li>
     <li role="listitem">
       📍 Indirizzo: 
-      <a href="https://maps.app.goo.gl/EXAMPLELINK" 
-         target="_blank" 
-         rel="noopener" 
-         role="link"
-         aria-label="Visualizza mappa ufficio su Google Maps">
-        Via delle Piaggarelle, 26 - 01100 Viterbo</a>
+      <a href="https://maps.app.goo.gl/Gwka2RhUf6gayvqB7" target="_blank" rel="noopener" role="link" aria-label="Visualizza mappa ufficio su Google Maps">Via delle Piaggarelle, 26 - 01100 Viterbo</a>
     </li>
   </ul>
 
@@ -135,21 +130,9 @@ DIGITALROOTS/
     <h3>Segui i miei progetti:</h3>
     <ul role="list" style="list-style: none; padding: 0;">
       <li role="listitem" style="display: inline-block; margin-right: 15px;">
-        <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/" 
-           target="_blank"
-           rel="noopener"
-           role="link" 
-           aria-label="Profilo Facebook">
-          <img src="./assets/media/fbicon.webp" 
-               alt="Icona Facebook" 
-               width="32"
-               role="img">
-        </a>
+        <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/"target="_blank"rel="noopener"role="link" aria-label="Profilo Facebook"><img src="./assets/media/fbicon.webp" alt="Icona Facebook" width="32" role="img"></a>
       </li>
-      <li role="listitem" style="display: inline-block;">
-        <a href="https://www.instagram.com/samuele_dellemonache/" target="_blank" rel="noopener" role="link" aria-label="Profilo Instagram">
-          <img src="./assets/media/igicon.webp" alt="Icona Instagram" width="32" role="img">
-        </a>
+      <li role="listitem" style="display: inline-block;"><a href="https://www.instagram.com/samuele_dellemonache/" target="_blank" rel="noopener" role="link" aria-label="Profilo Instagram"><img src="./assets/media/igicon.webp" alt="Icona Instagram" width="32" role="img"></a>
       </li>
     </ul>
   </div>
