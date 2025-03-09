@@ -1,60 +1,46 @@
+<!DOCTYPE html>
+<html lang="it" aria-label="Sito principale Digitalroots">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Samuele Delle Monache">
     <meta name="description" content="Digitalroots - Samuele Delle Monache, specializzato in digital marketing, advertising e e-commerce. Portfolio professionale e servizi">
     <meta name="keywords" content="digital marketing, e-commerce, advertising, social media, SEO, web marketing">
     
-    <!-- Preconnect & Preload Critical Resources -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samueledellemonache.github.io/Digitalroots/">
+    <meta property="og:title" content="Digitalroots - Portfolio Professionale">
+    <meta property="og:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
+    <meta property="og:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://samueledellemonache.github.io/Digitalroots/">
+    <meta name="twitter:title" content="Digitalroots - Portfolio Professionale">
+    <meta name="twitter:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
+    <meta name="twitter:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.webp">
+
+    <!-- Preload & Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="assets/media/background.webp" as="image" type="image/webp">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
-    <!-- Primary Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap" media="print" onload="this.media='all'">
-    
-    <!-- Fallback for browsers without JavaScript -->
+    <!-- Fallback for browser without JavaScript -->
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Mulish:wght@400;600&display=swap">
     </noscript>
 
-    <!-- CSS Libraries -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-          crossorigin="anonymous"
-          media="print" 
-          onload="this.media='all'">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./assets/style.css" media="print" onload="this.media='all'">
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
 
-    <!-- Preload Font Files -->
-    <link rel="preload" href="./assets/fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./assets/fonts/cormorant-bold.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <!-- Favicon & Canonical -->
+    <!-- Favicon e Canonical -->
     <link rel="canonical" href="https://samueledellemonache.github.io/Digitalroots/">
     <link rel="icon" href="./assets/media/monogram-digitalroots-favicon.ico" type="image/x-icon">
     
-    <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
-    
-    <!-- Preloading Critical CSS -->
-    <style>
-        /* Critical CSS for LCP element */
-        #intro {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .sticky-header {
-            transition: transform 0.3s ease-in-out;
-        }
-    </style>
-
     <title>Digitalroots - Samuele Delle Monache</title>
 </head>
 
