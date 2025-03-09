@@ -9,8 +9,8 @@
 ### Homepage
 ![Anteprima homepage](./assets/media/screenshots/homepage.webp)
 ![Anteprima Su di me](./assets/media/screenshots/about-section.webp)
-![Anteprima Skills] (./assets/media/screenshots/skills-section.webp)
-![Anteprima Sezione Portfolio] (./assets/media/screenshots/portfolio-section.webp)
+![Anteprima Skills](./assets/media/screenshots/skills-section.webp)
+![Anteprima Sezione Portfolio](./assets/media/screenshots/portfolio-section.webp)
 ![Anteprima Footer] (./assets/media/screenshots/footer-section.webp)
 
 ### Pagina Portfolio
