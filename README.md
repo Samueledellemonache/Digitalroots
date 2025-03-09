@@ -6,8 +6,8 @@
 ---
 
 ## 🍃 Cos'è Digitalroots? 
-{aria-labelledby="cos-e-digitalroots"}
-<div role="region" aria-labelledby="cos-è-digitalroots">
+  <div role="region" aria-labelledby="cos-è-digitalroots" style="position:relative">
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Descrizione del progetto</span>
 Il mio portfolio professionale che unisce:
 - 15+ progetti reali (2023/2024)
 - Risultati concreti di campagne advertising
@@ -17,8 +17,9 @@ Il mio portfolio professionale che unisce:
 
 ---
 
-## ✨ Funzionalità principali {aria-labelledby="funzionalita"}
-<div role="region" aria-labelledby="funzionalita">
+## ✨ Funzionalità principali
+  <div role="region" aria-labelledby="funzionalita" style="position:relative">
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Principali funzionalità del sito</span>
 - **Case study dettagliati** con PDF scaricabili
 - **Design responsive** per tutti i dispositivi
 - **Accessibilità certificata** WCAG 2.1 AA
@@ -28,8 +29,9 @@ Il mio portfolio professionale che unisce:
 
 ---
 
-## 🛠 Tecnologie utilizzate {aria-labelledby="tecnologie"}
+## 🛠 Tecnologie utilizzate 
 <div role="region" aria-labelledby="tecnologie">
+<span style="position:absolute;left:-9999px" aria-hidden="true">Strumenti e tecnologie</span>
 <div role="table" aria-label="Tabella tecnologie utilizzate">
 
 | Sezione         | Tecnologia                | File         |
@@ -53,7 +55,9 @@ Il mio portfolio professionale che unisce:
 
 ---
 
-## 🚀 Come visualizzare {aria-labelledby="visualizza"}
+## 🚀 Come visualizzare
+<div role="region" aria-labelledby="install-guide" style="position:relative">
+<span style="position:absolute;left:-9999px" aria-hidden="true">Guida all'installazione</span>
 1. Clona il repository:
 ```bash
 git clone https://github.com/samueledellemonache/Digitalroots.git
@@ -61,9 +65,10 @@ git clone https://github.com/samueledellemonache/Digitalroots.git
 2. Apri `index.html` con qualsiasi browser
 ---
 
-## 📂 Struttura files {aria-labelledby="struttura"}
-<div role="region" aria-labelledby="struttura">
-<pre role="document" aria-label="Struttura directory">
+## 📂 Struttura files 
+  <div role="region" aria-labelledby="struttura" style="position:relative>
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Scaffolding del sito</span>
+  <pre role="document" aria-label="Struttura directory">
 
 DIGITALROOTS/
 ├── assets/
@@ -77,8 +82,9 @@ DIGITALROOTS/
 
 ---
 
-##🌱 Sostenibilità  {aria-labelledby="sostenibilita"}
-<div role="region" aria-labelledby="sostenibilita">
+##🌱 Sostenibilità 
+  <div role="region" aria-labelledby="sostenibilita" style="position:relative>
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Digitalroots per l'ambiente</span>
   
 -Hosting eco-friendly
 
@@ -91,9 +97,9 @@ DIGITALROOTS/
 
 ---
 
-## 🔍 Ottimizzazione SEO  {aria-labelledby="seo"}
-
-<div role="region" aria-labelledby="seo"> 
+## 🔍 Ottimizzazione SEO 
+  <div role="region" aria-labelledby="seo" style="position:relative>
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Ottimizzazione SEO</span>
 - Meta tag dinamici
 - Lazy loading immagini
 - Sitemap automatica
@@ -101,25 +107,65 @@ DIGITALROOTS/
 
 ---
 
-## 📮 Contatti {aria-labelledby="contatti"}
-<div role="region" aria-labelledby="contatti">
+## 📮 Contatti 
+<div role="region" aria-labelledby="contacts-heading" style="position:relative>
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Come contattarmi per maggiori informazioni</span>
+  <h2 id="contacts-heading" class="visually-hidden">Informazioni di contatto</h2>
+  
+  <ul role="list">
+    <li role="listitem">
+      📧 Email: <a href="mailto:samuele.digitalroots@gmail.com" role="link" aria-label="Invia email a Samuele">samuele.digitalroots@gmail.com</a>
+    </li>
+    <li role="listitem">
+      📱 Telefono: <a href="tel:+393923574954" role="link" aria-label="Chiama Samuele">+39 392 3574954</a>
+    </li>
+    <li role="listitem">
+      📍 Indirizzo: 
+      <a href="https://maps.app.goo.gl/EXAMPLELINK" 
+         target="_blank" 
+         rel="noopener" 
+         role="link"
+         aria-label="Visualizza mappa ufficio su Google Maps">
+        Via delle Piaggarelle, 26 - 01100 Viterbo
+      </a>
+    </li>
+  </ul>
 
-**Email:** [samuele.digitalroots@gmail.com](mailto:samuele.digitalroots@gmail.com) 
-
-**Telefono:**  <span role="text" aria-label="Numero di telefono">+39 3923574954</span> 
-
-**Indirizzo:** <span role="text" aria-label="Indirizzo fisico">Via delle Piaggarelle, 26 - 01100 Viterbo</span>
-
-
-[Facebook](https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/)
-      
-[Instagram](https://www.instagram.com/samuele_dellemonache/)
-
+  <div role="navigation" aria-label="Social media">
+    <h3>Segui i miei progetti:</h3>
+    <ul role="list" style="list-style: none; padding: 0;">
+      <li role="listitem" style="display: inline-block; margin-right: 15px;">
+        <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/" 
+           target="_blank"
+           rel="noopener"
+           role="link" 
+           aria-label="Profilo Facebook">
+          <img src="./assets/media/facebook-icon.webp" 
+               alt="Icona Facebook" 
+               width="32"
+               role="img">
+        </a>
+      </li>
+      <li role="listitem" style="display: inline-block;">
+        <a href="https://www.instagram.com/samuele_dellemonache/" 
+           target="_blank"
+           rel="noopener"
+           role="link" 
+           aria-label="Profilo Instagram">
+          <img src="./assets/media/instagram-icon.webp" 
+               alt="Icona Instagram" 
+               width="32"
+               role="img">
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
----
 
-## 💻 Competenze {aria-labelledby="competenze"}
-<div role="region" aria-labelledby="competenze"> 
+## 💻 Competenze 
+  <div role="region" aria-labelledby="competenze" style="position:relative>
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Quali sono i servizi che offerti da Digitalroots</span>
+    
 - Digital Advertising
 - Analisi dati (GA4/GTM)
 - Conversion Rate Optimization
@@ -128,67 +174,64 @@ DIGITALROOTS/
 </div>
 
 ---
-## 🖼 Anteprime del sito {aria-labelledby="anteprime"}
-
-<div role="region" aria-labelledby="anteprime">
-  <h2 id="anteprime" class="visually-hidden">Anteprime del sito</h2>
-
-  <section role="group" aria-labelledby="homepage-heading">
-    <h3 id="homepage-heading">Homepage</h3>
-    <figure role="figure" aria-labelledby="homepage-caption">
-      <img src="./assets/media/screenshots/homepage.webp" 
-           alt="Interfaccia principale del portfolio con menu di navigazione, progetti in evidenza e sezione contatti"
-           role="img"
-           aria-describedby="homepage-desc">
-      <figcaption id="homepage-caption">
-        Vista completa della homepage - <span id="homepage-desc">Layout moderno con header fisso, card progetti interattive e footer responsive</span>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section role="group" aria-label="Sezioni principali">
-    <div role="list">
-      <div role="listitem">
-        <figure role="figure" aria-labelledby="about-caption">
+## 🖼 Anteprime del sito 
+  <div role="region" aria-labelledby="previews-heading" style="position:relative>
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Screenshots del sito</span>
+    
+  <h2 id="previews-heading" class="visually-hidden">Anteprime del sito</h2>
+  
+  <div role="grid" aria-label="Galleria anteprime">
+    <!-- Homepage -->
+    <div role="row">
+      <div role="gridcell">
+        <figure role="figure" aria-labelledby="home-preview">
+          <img src="./assets/media/screenshots/homepage.webp" 
+               alt="Schermata homepage con header fisso, presentazione personale e sezione progetti principali"
+               role="img">
+          <figcaption id="home-preview" role="caption">Vista completa della homepage</figcaption>
+        </figure>
+      </div>
+      <div role="gridcell">
+        <figure role="figure" aria-labelledby="about-preview">
           <img src="./assets/media/screenshots/about-section.webp" 
-               alt="Sezione 'Su di me' con foto profilo e testo biografico"
+               alt="Sezione 'Su di me' con foto profilo e testo descrittivo"
                role="img">
-          <figcaption id="about-caption">Presentazione personale con dettagli professionali</figcaption>
-        </figure>
-      </div>
-      <div role="listitem">
-        <figure role="figure" aria-labelledby="skills-caption">
-          <img src="./assets/media/screenshots/skills-section.webp" 
-               alt="Visualizzazione grafica delle competenze tecniche con diagrammi circolari"
-               role="img">
-          <figcaption id="skills-caption">Rappresentazione visiva delle principali competenze</figcaption>
-        </figure>
-      </div>
-      <div role="listitem">
-        <figure role="figure" aria-labelledby="portfolio-caption">
-          <img src="./assets/media/screenshots/portfolio-section.webp" 
-               alt="Galleria progetti con thumbnail cliccabili e filtri categorie"
-               role="img">
-          <figcaption id="portfolio-caption">Raccolta organizzata dei lavori realizzati</figcaption>
+          <figcaption id="about-preview" role="caption">Sezione biografica</figcaption>
         </figure>
       </div>
     </div>
-  </section>
-
-  <section role="group" aria-labelledby="portfolio-page-heading">
-    <h3 id="portfolio-page-heading">Pagina Portfolio</h3>
-    <figure role="figure" aria-labelledby="portfolio-detail-caption">
-      <img src="./assets/media/screenshots/portfolio-page.webp" 
-           alt="Dettaglio progetto singolo con slider immagini e specifiche tecniche"
-           role="img"
-           aria-describedby="portfolio-detail-desc">
-      <figcaption id="portfolio-detail-caption">
-        Case study approfondito - <span id="portfolio-detail-desc">Visualizzazione dati performance, processi lavorativi e risultati ottenuti</span>
-      </figcaption>
-    </figure>
-  </section>
-</div>
----
+    <!-- Skills -->
+    <div role="row">
+      <div role="gridcell">
+        <figure role="figure" aria-labelledby="skills-preview">
+          <img src="./assets/media/screenshots/skills-section.webp" 
+               alt="Griglia di 10 competenze con icone e tooltip interattivi"
+               role="img">
+          <figcaption id="skills-preview" role="caption">Visualizzazione competenze</figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div role="row">
+      <div role="gridcell">
+        <figure role="figure" aria-labelledby="portfolio-preview">
+          <img src="./assets/media/screenshots/portfolio-section.webp" 
+               alt="Anteprima sezione portfolio con card progetti e pulsanti PDF"
+               role="img">
+          <figcaption id="portfolio-preview" role="caption">Progetti principali</figcaption>
+        </figure>
+      </div>
+      <div role="gridcell">
+        <figure role="figure" aria-labelledby="full-portfolio">
+          <img src="./assets/media/screenshots/portfolio-page.webp" 
+               alt="Pagina portfolio completo con griglia di 15 progetti filtrabili"
+               role="img">
+          <figcaption id="full-portfolio" role="caption">Portfolio completo</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
 
 *"Dal digitale alle radici concrete"* 🌱  
 © 2024 Samuele Delle Monache
