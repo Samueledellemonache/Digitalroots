@@ -19,12 +19,12 @@ Il mio portfolio professionale che unisce:
 
 ## ✨ Funzionalità principali
   <div role="region" aria-labelledby="funzionalita" style="position:relative">
-  <span style="position:absolute;left:-9999px" aria-hidden="true">Principali funzionalità del sito</span>
-- **Case study dettagliati** con PDF scaricabili
-- **Design responsive** per tutti i dispositivi
-- **Accessibilità certificata** WCAG 2.1 AA
-- **Performance ottimizzate** (1.2s loading time)
-- **Dark mode automatica** basata sul sistema
+  <span style="position:absolute;left:-9999px" aria-hidden="true">Principali funzionalità del sito</span> <br>
+- **Case study dettagliati** con PDF scaricabili <br>
+- **Design responsive** per tutti i dispositivi <br>
+- **Accessibilità certificata** WCAG 2.1 AA <br>
+- **Performance ottimizzate** (1.2s loading time) <br>
+- **Dark mode automatica** basata sul sistema <br>
 </div>
 
 ---
@@ -57,7 +57,7 @@ Il mio portfolio professionale che unisce:
 
 ## 🚀 Come visualizzare
 <div role="region" aria-labelledby="install-guide" style="position:relative">
-<span style="position:absolute;left:-9999px" aria-hidden="true">Guida all'installazione</span>
+<span style="position:absolute;left:-9999px" aria-hidden="true">Guida all'installazione</span> <br>
 1. Clona il repository:<br>
 ```bash
 git clone https://github.com/samueledellemonache/Digitalroots.git <br>
