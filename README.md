@@ -85,10 +85,14 @@ DIGITALROOTS/
 ---
 
 ## 📮 Contatti
-**Email:** [samuele.digitalroots@gmail.com](mailto:samuele.digitalroots@gmail.com)  
+**Email:** [samuele.digitalroots@gmail.com](mailto:samuele.digitalroots@gmail.com) 
+
 ***Telefono:** +39 3923574954
+
 **Indirizzo:** Via delle Piaggarelle, 26 - 01100 Viterbo
+
 **Facebook:** https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/?_rdr
+
 **Instagram:** https://www.instagram.com/samuele_dellemonache/
 
 ---
