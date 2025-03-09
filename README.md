@@ -83,7 +83,7 @@ DIGITALROOTS/
 
 ---
 
-##🌱 Sostenibilità 
+## 🌱 Sostenibilità 
   <div role="region" aria-labelledby="sostenibilita" style="position:relative>
   <span style="position:absolute;left:-9999px" aria-hidden="true">Digitalroots per l'ambiente</span>
   
@@ -112,7 +112,6 @@ DIGITALROOTS/
 <div role="region" aria-labelledby="contacts-heading" style="position:relative>
   <span style="position:absolute;left:-9999px" aria-hidden="true">Come contattarmi per maggiori informazioni</span>
   <h2 id="contacts-heading" class="visually-hidden">Informazioni di contatto</h2>
-  
   <ul role="list">
     <li role="listitem">
       📧 Email: <a href="mailto:samuele.digitalroots@gmail.com" role="link" aria-label="Invia email a Samuele">samuele.digitalroots@gmail.com</a>
@@ -125,7 +124,6 @@ DIGITALROOTS/
       <a href="https://maps.app.goo.gl/Gwka2RhUf6gayvqB7" target="_blank" rel="noopener" role="link" aria-label="Visualizza mappa ufficio su Google Maps">Via delle Piaggarelle, 26 - 01100 Viterbo</a>
     </li>
   </ul>
-
   <div role="navigation" aria-label="Social media">
     <h3>Segui i miei progetti:</h3>
     <ul role="list" style="list-style: none; padding: 0;">
