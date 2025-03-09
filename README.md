@@ -109,22 +109,11 @@ DIGITALROOTS/
 ---
 
 ## 📮 Contatti 
-<div role="region" aria-labelledby="contacts-heading" style="position:relative>
-  <span style="position:absolute;left:-9999px" aria-hidden="true">Come contattarmi per maggiori informazioni</span>
-  <h2 id="contacts-heading" class="visually-hidden">Informazioni di contatto</h2>
-  <ul role="list">
-    <li role="listitem">
-      📧 Email: <a href="mailto:samuele.digitalroots@gmail.com" role="link" aria-label="Invia email a Samuele">samuele.digitalroots@gmail.com</a>
-    </li>
-    <li role="listitem">📱 Telefono: <a href="tel:+393923574954" role="link" aria-label="Chiama Samuele">+39 392 3574954</a>
-    </li>
-    <li role="listitem">📍 Indirizzo: <a href="https://maps.app.goo.gl/Gwka2RhUf6gayvqB7" target="_blank" rel="noopener" role="link" aria-label="Visualizza mappa ufficio su Google Maps">Via delle Piaggarelle, 26 - 01100 Viterbo</a>
-    </li>
-  </ul>
-  <div role="navigation" aria-label="Social media"> <h3>Segui i miei progetti:</h3>
-    <ul role="list" style="list-style: none; padding: 0;"><li role="listitem" style="display: inline-block; margin-right: 15px;"> <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/"target="_blank"rel="noopener"role="link" aria-label="Profilo Facebook"><img src="./assets/media/fbicon.webp" alt="Icona Facebook" width="32" role="img"></a></li>
-    <li role="listitem" style="display: inline-block;"><a href="https://www.instagram.com/samuele_dellemonache/" target="_blank" rel="noopener" role="link" aria-label="Profilo Instagram"><img src="./assets/media/igicon.webp" alt="Icona Instagram" width="32" role="img"></a></li></ul>
-  </div>
+<div role="region" aria-labelledby="contacts-heading" style="position:relative><span style="position:absolute;left:-9999px" aria-hidden="true">Come contattarmi per maggiori informazioni</span><h2 id="contacts-heading" class="visually-hidden">Informazioni di contatto</h2><ul role="list">
+    <li role="listitem">📧 Email: <a href="mailto:samuele.digitalroots@gmail.com" role="link" aria-label="Invia email a Samuele">samuele.digitalroots@gmail.com</a></li>
+    <li role="listitem">📱 Telefono: <a href="tel:+393923574954" role="link" aria-label="Chiama Samuele">+39 392 3574954</a></li>
+    <li role="listitem">📍 Indirizzo: <a href="https://maps.app.goo.gl/Gwka2RhUf6gayvqB7" target="_blank" rel="noopener" role="link" aria-label="Visualizza mappa ufficio su Google Maps">Via delle Piaggarelle, 26 - 01100 Viterbo</a></li></ul>
+  <div role="navigation" aria-label="Social media"> <h3>Segui i miei progetti:</h3><ul role="list" style="list-style: none; padding: 0;"><li role="listitem" style="display: inline-block; margin-right: 15px;"> <a href="https://www.facebook.com/people/Samuele-Delle-Monache/100011033235684/"target="_blank"rel="noopener"role="link" aria-label="Profilo Facebook"><img src="./assets/media/fbicon.webp" alt="Icona Facebook" width="32" role="img"></a></li><li role="listitem" style="display: inline-block;"><a href="https://www.instagram.com/samuele_dellemonache/" target="_blank" rel="noopener" role="link" aria-label="Profilo Instagram"><img src="./assets/media/igicon.webp" alt="Icona Instagram" width="32" role="img"></a></li></ul></div>
 </div>
 
 ## 💻 Competenze 
