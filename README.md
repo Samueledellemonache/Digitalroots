@@ -44,12 +44,12 @@ Il mio portfolio professionale che unisce:
 </div>
 
 **Ottimizzazione:** 
-- Immagini WebP/AVIF
-- Critical CSS in-line
-- Lazy loading nativo
+- Immagini WebP/AVIF <br>
+- Critical CSS in-line <br>
+- Lazy loading nativo <br>
 
 **Strumenti:**  
-- Formspree per i contatti
+- Formspree per i contatti 
 - GitHub Pages (hosting)
 - Lighthouse per testing
 
@@ -58,9 +58,9 @@ Il mio portfolio professionale che unisce:
 ## 🚀 Come visualizzare
 <div role="region" aria-labelledby="install-guide" style="position:relative">
 <span style="position:absolute;left:-9999px" aria-hidden="true">Guida all'installazione</span>
-1. Clona il repository:
+1. Clona il repository:<br>
 ```bash
-git clone https://github.com/samueledellemonache/Digitalroots.git
+git clone https://github.com/samueledellemonache/Digitalroots.git <br>
 ```
 2. Apri `index.html` con qualsiasi browser
 ---
@@ -126,8 +126,7 @@ DIGITALROOTS/
          rel="noopener" 
          role="link"
          aria-label="Visualizza mappa ufficio su Google Maps">
-        Via delle Piaggarelle, 26 - 01100 Viterbo
-      </a>
+        Via delle Piaggarelle, 26 - 01100 Viterbo</a>
     </li>
   </ul>
 
@@ -140,22 +139,15 @@ DIGITALROOTS/
            rel="noopener"
            role="link" 
            aria-label="Profilo Facebook">
-          <img src="./assets/media/facebook-icon.webp" 
+          <img src="./assets/media/fbicon.webp" 
                alt="Icona Facebook" 
                width="32"
                role="img">
         </a>
       </li>
       <li role="listitem" style="display: inline-block;">
-        <a href="https://www.instagram.com/samuele_dellemonache/" 
-           target="_blank"
-           rel="noopener"
-           role="link" 
-           aria-label="Profilo Instagram">
-          <img src="./assets/media/instagram-icon.webp" 
-               alt="Icona Instagram" 
-               width="32"
-               role="img">
+        <a href="https://www.instagram.com/samuele_dellemonache/" target="_blank" rel="noopener" role="link" aria-label="Profilo Instagram">
+          <img src="./assets/media/igicon.webp" alt="Icona Instagram" width="32" role="img">
         </a>
       </li>
     </ul>
@@ -176,7 +168,7 @@ DIGITALROOTS/
 ---
 ## 🖼 Anteprime del sito 
   <div role="region" aria-labelledby="previews-heading" style="position:relative>
-  <span style="position:absolute;left:-9999px" aria-hidden="true">Screenshots del sito</span>
+  <span style="position:absolute;left:-9999px" aria-hidden="true"> Screenshots del sito </span>
     
   <h2 id="previews-heading" class="visually-hidden">Anteprime del sito</h2>
   
