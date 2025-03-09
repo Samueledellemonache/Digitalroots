@@ -5,7 +5,8 @@
 
 ---
 
-## 🍃 Cos'è Digitalroots? {aria-labelledby="cos-e-digitalroots"}
+## 🍃 Cos'è Digitalroots? 
+{aria-labelledby="cos-e-digitalroots"}
 <div role="region" aria-labelledby="cos-è-digitalroots">
 Il mio portfolio professionale che unisce:
 - 15+ progetti reali (2023/2024)
