@@ -87,7 +87,7 @@ DIGITALROOTS/
 ## 📮 Contatti
 **Email:** [samuele.digitalroots@gmail.com](mailto:samuele.digitalroots@gmail.com) 
 
-***Telefono:** +39 3923574954
+**Telefono:** +39 3923574954
 
 **Indirizzo:** Via delle Piaggarelle, 26 - 01100 Viterbo
 
