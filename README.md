@@ -60,8 +60,8 @@ Il mio portfolio professionale che unisce:
 <span style="position:absolute;left:-9999px" aria-hidden="true">Guida all'installazione</span> <br>
 1. Clona il repository:<br>
 ```bash
-git clone https://github.com/samueledellemonache/Digitalroots.git <br>
-```
+git clone https://github.com/samueledellemonache/Digitalroots.git 
+``` <br>
 2. Apri `index.html` con qualsiasi browser
 ---
 
