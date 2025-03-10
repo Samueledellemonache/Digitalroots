@@ -150,12 +150,18 @@ DIGITALROOTS/
 <div role="gridcell">
 <figure role="figure" aria-labelledby="portfolio-preview"> 
 <img src="./assets/media/screenshots/portfolio-section.webp" alt="Anteprima sezione portfolio con card progetti e pulsanti PDF" role="img">
-<figcaption id="portfolio-preview" role="caption">Progetti principali</figcaption> </figure>
+<figcaption id="portfolio-preview" role="caption">Progetti principali su Homepage</figcaption> </figure>
 </div>
 <div role="gridcell">
 <figure role="figure" aria-labelledby="full-portfolio">
-<img src="./assets/media/screenshots/portfolio-page.webp" alt="Pagina portfolio completo con griglia di 15 progetti filtrabili" role="img">
+<img src="./assets/media/screenshots/portfolio-page.webp" alt="Pagina portfolio completo con griglia di 15 progetti" role="img">
 <figcaption id="full-portfolio" role="caption">Portfolio completo</figcaption> </figure>
+</div>
+<div role="gridcell">
+<figure role="figure" aria-labelledby="projects-portfolio">
+<img src="./assets/media/screenshots/portfolio-project.webp" alt="Anteprima griglia di 15 progetti" role="img">
+<figcaption id="projects-portfolio" role="caption">Griglia progetti</figcaption> </figure>
+</div>
 </div>
 </div>
 
