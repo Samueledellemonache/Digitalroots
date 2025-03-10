@@ -14,7 +14,7 @@
     <meta property="og:description" content="Esplora i progetti di digital marketing e advertising di Samuele Delle Monache">
     <meta property="og:image" content="https://samueledellemonache.github.io/Digitalroots/assets/media/logo-digitalroots-scritta.webp">
 
-    <!-- Twitter -->
+    <!-- X / Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://samueledellemonache.github.io/Digitalroots/">
     <meta name="twitter:title" content="Digitalroots - Portfolio Professionale">
@@ -47,42 +47,42 @@
 <body aria-label="Contenuto principale">
     <div class="main-container">
 
-        <header class="sticky-header" role="banner" aria-label="Intestazione principale">
+        <header class="sticky-header" aria-label="Intestazione principale">
             <div class="logo" aria-label="Logo di Digitalroots">
                 <a href="index.html">
                     <img src="./assets/media/logo-digitalroots-scritta.webp" alt="Digitalroots - Torna alla home page">
                 </a>
             </div>
 
-            <div class="navbar-toggler" id="navbar-toggler" role="button" aria-expanded="false" aria-label="Menu di navigazione">
-                <div class="menu-icon" aria-hidden="true"></div>
-                <div class="menu-icon" aria-hidden="true"></div>
-                <div class="menu-icon" aria-hidden="true"></div>
-            </div>
-            <nav class="navbar-collapse" id="navbar-collapse" role="navigation" aria-label="Menu principale" aria-hidden="true">
-                <ul role="menu">
-                    <li role="none"><a href="index.html#intro" class="nav-link" role="menuitemradio" aria-current="page" aria-checked="true" aroa-current="page">Home</a></li>
-                    <li role="none"><a href="index.html#about" class="nav-link" role="menuitem">Su di me</a></li>
-                    <li role="none"><a href="index.html#skills" class="nav-link" role="menuitem">Skills</a></li>
-                    <li role="none"><a href="portfolio.html" class="nav-link" role="menuitem">Portfolio</a></li>
-                    <li role="none"><a href="index.html#footer" class="nav-link" role="menuitem">Contatti</a></li>
+            <button class="navbar-toggler" id="navbar-toggler" aria-expanded="false" aria-label="Menu di navigazione">
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+            </button>
+            <nav class="navbar-collapse" id="navbar-collapse" aria-label="Menu principale">
+                <ul>
+                    <li><a href="index.html#intro" class="nav-link" aria-current="page">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">Su di me</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html#footer" class="nav-link">Contatti</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- INTRO SECTION -->
-        <section id="intro" role="region" aria-labelledby="introTitle" aria-describedby="introDesc">
-
-            <div class="intro-section" role="document"> 
-                <div class="intro text" aria-labelledby="intro-headings">
-            <h1 id="introTitle" aria-label="Titolo principale"><b>Benvenutə su Digitalroots </b></h1>
-            <h2 id="introDesc" aria-label="Sottotitolo introduttivo"><b>Creatività digitale per un futuro sostenibile.<br>
-                Esplora, scopri, collabora.</b></h2>
-            </div>
+        <section id="intro" aria-labelledby="introTitle">
+            <div class="intro-section">
+                <div class="intro text">
+                    <h1 id="introTitle"><b>Benvenutə su Digitalroots </b></h1>
+                    <h2 id="introDesc"><b>Creatività digitale per un futuro sostenibile.<br>
+                        Esplora, scopri, collabora.</b></h2>
+                </div>
             </div>
         </section>
 
-        <section id="about" role="region" aria-labelledby="about-title" aria-describedby="aboutDesc">
+        <!-- ABOUT SECTION -->
+        <section id="about" aria-labelledby="about-title">
             <div class="container">
                 <div class="section-header">
                     <h2 id="about-title">Su di me</h2>
@@ -90,7 +90,7 @@
                 </div>
                 
                 <div class="about_container">
-                    <!-- Colonna sinistra -->
+                    <!-- Left Column -->
                     <div class="col_sx">
                         <div class="content-wrapper">
                             <p class="intro-text">Digital Marketing Student at Start2Impact | Working to be Advertiser & E-commerce specialist | Photographer </p>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <!-- Immagine centrale -->
+                    <!-- Central Image -->
                     <div class="image-container">
                         <img src="./assets/media/personal-photo.webp" 
                              alt="Samuele Delle Monache di profilo in un bosco con foglia di felce in mano" 
@@ -110,7 +110,7 @@
                              class="profile-image">
                     </div>
 
-                    <!-- Colonna destra -->
+                    <!-- Right Column -->
                     <div class="col_dx">
                         <div class="about-text">
                             <p>Ho da sempre una predilezione per i rapporti umani e la comunicazione, quindi ho scelto di unire le potenzialità del digitale al mio interesse per l’advertising e l’e-commerce.</p>
@@ -126,7 +126,7 @@
         </section>
 
         <!-- SKILLS SECTION -->
-        <section id="skills" role="region" aria-labelledby="skillsTitle">
+        <section id="skills" aria-labelledby="skillsTitle">
             <div class="container">
                 <h2 id="skillsTitle">Le mie skills</h2>
                 <p class="visually-hidden">Elenco delle competenze di Samuele Delle Monache</p>
@@ -135,9 +135,8 @@
                     <div class="skill-item" data-tooltip="CREATIVITÀ: Ideazione e realizzazione di contenuti">
                         <img src="./assets/media/icon-creativity-skills.webp" alt="Profilo stilizzato di una testa umana con elementi astratti che simboleggiano la creatività. Sopra, la scritta 'CREATIVITY'" loading="lazy"> 
                     </div>
-                    <div class="skill-item" data-tooltip="SOCIAL MEDIA MANAGER: Gestione e pianificazione dei contenuti sui social" aria-describedby="creativity-tooltip"
-                    role="img">
-                        <img src="./assets/media/icon-social-media-manager-skills.webp" alt="Icona stilizzata di una mano che sorregge tre simboli social: un cuore, un play e un like. Sopra, la scritta 'SMM'" aria-hidden="true" loading="lazy">
+                    <div class="skill-item" data-tooltip="SOCIAL MEDIA MANAGER: Gestione e pianificazione dei contenuti sui social">
+                        <img src="./assets/media/icon-social-media-manager-skills.webp" alt="Icona stilizzata di una mano che sorregge tre simboli social: un cuore, un play e un like. Sopra, la scritta 'SMM'" loading="lazy">
                     </div>
                     <div class="skill-item" data-tooltip="ADVERTISING: Creazione e gestione di campagne pubblicitarie">
                         <img src="./assets/media/icon-advertising-skills.webp" alt="Icona stilizzata di un megafono con simboli di advertising: play, ads e condivisione. Sopra, la scritta 'ADV'" loading="lazy">
@@ -159,42 +158,40 @@
                     </div> 
 
                     <div class="skill-item" data-tooltip="TEAM WORKING: Lavoro di squadra e collaborazione">
-                        <img src="./assets/media/team-working-skills.webp" alt="Icona stilizzata di tre persone che collaborano. Una lampadina, un fumetto e una matita sopra le teste simboleggiano idee e dialogo" loading="lazy">
+                        <img src="./assets/media/team-working-skills.webp" alt="Icona stilizzata di tre persone che collaborano. Una lampadina, un fumetto e una matita sopra le teste simboleggiano idee e dialogo" loading="lazy">
                     </div> 
 
                     <div class="skill-item" data-tooltip="COMPETITOR ANALYSIS: Analisi della concorrenza">
-                        <img src="./assets/media/competitor-analysis-skill.webp" alt="Icona stilizzata con una lente d'ingrandimento che analizza un grafico, collegata a quattro persone. Testo curvo: 'Competitor Analysis'" loading="lazy">
+                        <img src="./assets/media/competitor-analysis-skill.webp" alt="Icona stilizzata con una lente d'ingrandimento che analizza un grafico, collegata a quattro persone. Testo curvo: 'Competitor Analysis'" loading="lazy">
                     </div> 
 
                     <div class="skill-item" data-tooltip="VIDEO EDITING: montaggio e creazione di video">
                         <img src="./assets/media/video-editing-skills.webp" alt=" Icona stilizzata di uno schermo che mostra un simbolo 'play', una matita e un righello per indicare il video editing" loading="lazy">
                     </div> 
-
                 </div>
             </div>
         </section>
 
         <!-- PORTFOLIO SECTION -->
-        <section id="portfolio"  role="region" aria-labelledby="portfolio-title">
-            <div class="container" aria-labelledby="portfolioTitle">
+        <section id="portfolio" aria-labelledby="portfolioTitle">
+            <div class="container">
                 <div class="portfolio-header">
-                    <h2 id="portfolioTitle">
-                    Il mio portfolio </h2>
+                    <h2 id="portfolioTitle">Il mio portfolio</h2>
                     <p class="visually-hidden">Elenco dei progetti realizzati con relativi dettagli</p>
                     <br>
                 </div>
                 <div class="prt_container">
-                    <div class="project" role="listitem">
+                    <div class="project">
                         <img src="./assets/media/orizon-experience-logo-sustainable-adventure-tourism.webp" alt="mappa con percorso tracciato, foglie in basso a sinistra e scritta 'Orizon Experience' in alto" loading="lazy">
                         <h3>Social Media</h3>
                         <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-social.pdf" aria-label="Apri PDF del progetto Social Media (1.8MB)">Apri PDF</button>
                     </div>
-                    <div class="project" role="listitem">
+                    <div class="project">
                         <img src="./assets/media/icon-facebook-ads-project.webp" alt="icona stilizzata di una pagina internet con al suo interno la scritta 'Ads'" loading="lazy">
                         <h3>Facebook Ads</h3>
                         <button class="btn open-pdf" target="_blank" data-pdf="./assets/media/project-facebook.pdf" aria-label="Apri PDF del progetto Facebook Ads (2MB)">Apri PDF</button>
                     </div>
-                    <div class="project" role="listitem">
+                    <div class="project">
                         <img src="./assets/media/icon-lookbook-shopify-project-marketplace-secondhand.webp" alt="logo tipografico lookbook" loading="lazy">
                         <h3>Shopify</h3>
                         <button class="btn open-pdf"  target="_blank" data-pdf="./assets/media/project-shopify.pdf" aria-label="Apri PDF del progetto Shopify (2.3MB)">Apri PDF</button>
@@ -205,13 +202,11 @@
         </section>
     </div>
 
-       <!-- FOOTER -->
-       <footer id="footer" class="footer" role="contentinfo"
-       aria-labelledby="footerTitle">
-
+    <!-- FOOTER -->
+    <footer id="footer" class="footer" aria-labelledby="footerTitle">
         <div class="footer-container">
             <!-- Form Column -->
-            <div class="footer-form" role="form" aria-labelledby="formTitle">
+            <div class="footer-form">
                 <p class="form-title">Mettiti in contatto con me!</p>
                 <form action="https://formspree.io/f/xnnjlaly" method="POST" id="contact-form" aria-labelledby="contact-form-title">
                     <label for="name">Nome:</label>
@@ -228,7 +223,7 @@
             </div>
 
             <!-- Info Column -->
-            <div class="footer-info" role="complementary" aria-label="Informazioni di contatto">
+            <div class="footer-info">
                 <div class="footer-branding">
                     <img src="./assets/media/logo-digitalroots-scritta.webp" alt="Logo tipografico composto dalla parola digitalroots con sottotitolo advertising e e-commerce" class="footer-logo" loading="lazy">
                     <ul class="footer-contacts">
@@ -269,5 +264,6 @@
 
     <!-- JavaScript -->
     <script src="./assets/script.js"></script>
+    
 </body>
 </html>
