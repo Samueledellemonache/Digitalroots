@@ -159,7 +159,7 @@ DIGITALROOTS/
 </div>
 <div role="gridcell">
 <figure role="figure" aria-labelledby="projects-portfolio">
-<img src="./assets/media/screenshots/porfolio-project.webp" alt="Anteprima griglia di 15 progetti" role="img">
+<img src="./assets/media/screenshots/portfolio-project.webp" alt="Anteprima griglia di 15 progetti" role="img">
 <figcaption id="projects-portfolio" role="caption">Griglia progetti</figcaption> </figure>
 </div>
 </div>
