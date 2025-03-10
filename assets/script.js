@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
 
-    // DOM Elements Configuration
+    // DOM elements configuration
     const dom = {
         header: document.querySelector(".sticky-header"),
         navToggler: document.getElementById("navbar-toggler"),
         navMenu: document.getElementById("navbar-collapse"),
         navLinks: document.querySelectorAll(".nav-link"),
         modal: document.getElementById("successModal"),
+        modalContent: document.querySelector(".modal-content"),
+        closeBtn: document.querySelector(".modal .close"),
         contactForm: document.getElementById("contact-form"),
         pdfLinks: document.querySelectorAll('.open-pdf'),
         mainContent: document.querySelector('main')
     };
 
-    // Main Initialization
+    // Main initialization
     function initApp() {
         initNavigation();
         setupHeaderScroll();
@@ -23,23 +25,20 @@ document.addEventListener("DOMContentLoaded", function() {
         setupModal();
     }
 
-    // NAVIGATION SYSTEM (Corrected)
+    // Navigation system
     function initNavigation() {
         let isMenuOpen = false;
 
         const toggleMenu = (forceClose = false) => {
             isMenuOpen = forceClose ? false : !isMenuOpen;
             
-            // Update ARIA attributes
-            dom.navToggler.setAttribute('aria-expanded', isMenuOpen);
-            dom.navMenu.setAttribute('aria-hidden', !isMenuOpen);
+            if(dom.navToggler) dom.navToggler.setAttribute('aria-expanded', isMenuOpen);
+            if(dom.navMenu) dom.navMenu.setAttribute('aria-hidden', !isMenuOpen);
             
-            // Toggle classes
-            dom.navMenu.classList.toggle('active', isMenuOpen);
+            if(dom.navMenu) dom.navMenu.classList.toggle('active', isMenuOpen);
             document.body.classList.toggle('no-scroll', isMenuOpen);
 
-            // Manage focus
-            if(isMenuOpen) {
+            if(isMenuOpen && dom.navLinks.length > 0) {
                 dom.navLinks[0].focus();
                 addMenuClosureListeners();
             } else {
@@ -74,8 +73,9 @@ document.addEventListener("DOMContentLoaded", function() {
             document.removeEventListener('keydown', handleEscape);
         };
 
-        // Event Listeners
-        dom.navToggler.addEventListener('click', () => toggleMenu());
+        if(dom.navToggler) {
+            dom.navToggler.addEventListener('click', () => toggleMenu());
+        }
         
         dom.navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        // Handle window resize
         window.addEventListener('resize', () => {
             if(window.innerWidth > 991 && isMenuOpen) {
                 closeMenu();
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // HEADER SCROLL BEHAVIOR
+    // Header scroll behavior
     function setupHeaderScroll() {
         let lastScroll = 0;
         window.addEventListener('scroll', () => {
@@ -107,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // CONTACT FORM HANDLING
+    // Contact form handling
     function setupContactForm() {
         if(!dom.contactForm) return;
 
@@ -120,14 +119,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 const response = await fetch('https://formspree.io/f/xnnjlaly', {
                     method: 'POST',
                     body: new FormData(dom.contactForm),
-                    headers: { 'Accept': 'application/json' }
+                    headers: { 
+                        'Accept': 'application/json',
+                        'Origin': window.location.origin
+                    },
+                    mode: 'cors'
                 });
 
                 if(response.ok) {
                     showModal('Grazie per avermi contattato! Riceverai una risposta entro 24 ore');
                     dom.contactForm.reset();
+                } else {
+                    throw new Error('HTTP error ' + response.status);
                 }
             } catch(error) {
+                console.error('Form error:', error);
                 showModal("Errore nell'invio del messaggio. Riprova più tardi.", true);
             } finally {
                 submitButton.removeAttribute('aria-busy');
@@ -135,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // PDF LINKS HANDLER
+    // PDF links handler
     function handlePDFLinks() {
         dom.pdfLinks.forEach(link => {
             link.addEventListener('click', function(e) {
@@ -151,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // TOOLTIPS SYSTEM
+    // Tooltips system
     function initTooltips() {
         const skillItems = document.querySelectorAll('.skill-item');
         
@@ -166,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function() {
             tooltip.setAttribute('role', 'tooltip');
             item.appendChild(tooltip);
 
-            // Event Handlers
             const showTooltip = () => {
                 tooltip.setAttribute('aria-hidden', 'false');
                 tooltip.style.opacity = '1';
@@ -186,31 +191,46 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // MODAL SYSTEM
+    // Modal system
     function setupModal() {
+        if(!dom.modal || !dom.closeBtn) return;
+
         const closeModal = () => {
-            dom.modal.style.display = 'none';
-            dom.modal.setAttribute('aria-hidden', 'true');
-            dom.mainContent.setAttribute('aria-hidden', 'false');
+            if(dom.modal) {
+                dom.modal.style.display = 'none';
+                dom.modal.setAttribute('aria-hidden', 'true');
+            }
+            if(dom.mainContent) dom.mainContent.setAttribute('aria-hidden', 'false');
         };
 
-        dom.modal.querySelector('.close').addEventListener('click', closeModal);
-        window.addEventListener('click', (e) => e.target === dom.modal && closeModal());
-        window.addEventListener('keydown', (e) => e.key === 'Escape' && closeModal());
+        dom.closeBtn.addEventListener('click', closeModal);
+        
+        window.addEventListener('click', (e) => {
+            if(e.target === dom.modal) closeModal();
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if(e.key === 'Escape') closeModal();
+        });
     }
 
     function showModal(message, isError = false) {
-        const modalContent = dom.modal.querySelector('.modal-content');
-        modalContent.innerHTML = `
-            <span class="close">&times;</span>
-            <p style="color: ${isError ? '#ff4444' : '#2c5951'}">${message}</p>
-        `;
-        dom.modal.style.display = 'block';
-        dom.modal.setAttribute('aria-hidden', 'false');
-        dom.mainContent.setAttribute('aria-hidden', 'true');
-        modalContent.focus();
+        if(!dom.modalContent) return;
+
+        const messageElement = dom.modalContent.querySelector('p');
+        if(messageElement) {
+            messageElement.textContent = message;
+            messageElement.style.color = isError ? '#ff4444' : '#2c5951';
+        }
+        
+        if(dom.modal) {
+            dom.modal.style.display = 'block';
+            dom.modal.setAttribute('aria-hidden', 'false');
+        }
+        if(dom.mainContent) dom.mainContent.setAttribute('aria-hidden', 'true');
+        if(dom.modalContent) dom.modalContent.focus();
     }
 
-    // Start Application
+    // Start application
     initApp();
 });
